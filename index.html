@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/488c723f58.js"></script>
+    <script src="https://vk.com/js/api/openapi.js?140" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="general">
+            <div class="logo">
+            </div>
+            <div class="window">
+                <div class="header">
+                    <h1>Выберите друзей</h1>
+                    <button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+
+                <div id="left_column" class="left_column clearfix">
+                    <div class="search">
+                        <input type="text" id="search_left" class="search_input" placeholder="Начните вводить имя друга">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="title">
+                        <h2>Ваши друзья</h2>
+                    </div>
+                    <ul id="friendsId" data-draggable="target">
+                    </ul>
+
+                </div>
+
+                <div id="right_column" class="right_column clearfix">
+                    <div class="search">
+                        <input type="text" class="search_input right" placeholder="Название">
+                    </div>
+                    <div class="title">
+                        <h2>Друзья в списке</h2>
+                    </div>
+                    <ul id="friend_sorted" data-draggable="target">
+                    </ul>
+
+                </div>
+
+                <div class="footer clearfix">
+                    <button id="save" class="save" type="button">Сохранить</button>
+                    <button id="load" class="save" type="button">Загрузить</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+    <script src="../drag.js"></script>
+</body>
+</html>
